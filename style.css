@@ -5,12 +5,12 @@
 /* ------------------------------------------- */
 
 :root {
-    /* --primary: #EB9762;
-    --primary-hover: #9F5449;
-    --secondary: #4F3A41; */
+    --primary: #38acae;
+    --primary-hover: #fff;
+    --secondary: #b8b1b1;
   
-    /* --error: #e71d1d7e;
-    --correkt: #00ff0d7e; */
+    --error: #e71d1d7e;
+    --correkt: #00ff0d7e;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: rgb(65, 58, 58);
+    color: #b8b1b12f;
     top: 0;
     right: 0;
     bottom: 0;
@@ -37,7 +37,7 @@ body {
     right: 10px;
     bottom: 10px;
     left: 10px;
-    border: 1px solid rgba(184, 177, 177, 0.2);
+    border: 1px solid #b8b1b12f;
 }
 
 h1 {
