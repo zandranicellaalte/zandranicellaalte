@@ -7,23 +7,273 @@
         <title>Zandra Nicella Alte</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script type="text/javascript" src="js/main.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div id="background">
-            <div id="center"> 
-                <div class="text">
-                    <h1>Zandra Nicella Alte</h1>
-                    <div id="status">
-                        <p> Web Development Student </p>
+
+        <div class="center">
+            <div class="loader">Loading...</div>
+        </div>
+
+        <div class="container">
+            <!----------------------- HAMBURGERMENU --------------------------->
+            <div class="hamburger-menu">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+                <span>Close</span>
+            </div>
+
+            <section class="sidebar">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#about" class="menu-link" data-content="about" onclick="scrollMEAnimated()">Me, myself and I</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#ee" class="menu-link" data-content="education-experiance">Utbildning & Erfarenhet</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#skills" class="menu-link" data-content="skills">Skills</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#projects" class="menu-link" data-content="project" onclick="projects()">Projekt</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#contact" class="menu-link" data-content="Contact">Kontakt</a>
+                    </li>
+                </ul>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/zandra-alte-2415a1ba/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/zandranicellaalte"><i class="fab fa-github"></i></a>
+                </div>
+            </section>
+            <!----------------------- HEADER & ABOUT --------------------------->
+            <header class="header">
+                <div class="img-wrapper">
+                    <img src="fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg" alt="Development" />
+                </div>
+                <div class="banner">
+                    <h1>Hej,</h1>
+                    <h2>Zandra Nicella Alte här!</h2>
+                    <p>Web Development Student</p>
+                        <a href="#about">Upptäck mer</a>
+                </div>
+                <div class="photo">
+                    <img src="received_10214942316414341.jpeg" alt="Photo of me" />
+                </div>
+            </header>
+            <!------------------------ MYSELF AND I ---------------------------->
+            <section id="about">
+                <div class="section-header">
+                    <hi class="section-heading">Me, myself and I</hi>
+                    <div class="underline"></div>
+                </div>
+                <div class="aboutme">
+                    <p>Jag är en nyexaminerad högskolestudnet som är redo för arbetslivets 
+                        äventyr! Jag skulle beskriva mig själv som en aktiv person som älskar 
+                        vara på glatt humör! Gillar att ta ansvar, lägga min själ i de uppgifter jag 
+                        får och jag tycker själv att jag är en person som man kan lita på både 
+                        arbetsmässigt, privat och under stress.</p>
+                </div>
+            </section>
+            <!------------------------ PHOTO ---------------------------->
+            <section class="Photosection">
+                <img src="bg2.jpg" alt="">
+            </section>
+            <!------------------- EDUCATION AND EXPERIENCE --------------------->
+            <section id="ee">
+                <div class="section-header">
+                    <hi class="section-heading">Utbildning & Erfarenhet</hi>
+                    <div class="underline"></div>
+                </div>
+                <div class="educations">
+                    <div class="scroller">
+                        <div class="education">
+                            <div class="education-wrapper">
+                                <div class="education-info">
+                                    <h2>WEBBUTVECKLING - PROGRAMMERING</h2>
+                                    <h3>HÖGSKOLAN I SKÖVDE</h3>
+                                    <p>"Kandidatutbildning med fördjupning inom webbutveckling, 
+                                        kombinerar design och programmering så att du kan hantera både det 
+                                        som användarna ser och tekniken bakom."</p>
+                                    <p class="education-year">2019 - 2022</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="education-underline"></div>
+                        <div class="education">
+                            <div class="education-wrapper">
+                                <div class="education-info">
+                                    <h2>EKONOMI PROGRAMMET</h2>
+                                    <p class="education-year">2013 - 2018</p>
+                                    <h3>HÖGSKOLAN I SKÖVDE </h3>
+                                    <p>"Ekonomi kandidatutbildning med kurser inom företagsekonomi, 
+                                        juridik, statistik och nationalekonomi."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="education-underline"></div>
+                        <div class="education">
+                            <div class="education-wrapper">
+                                <div class="education-info">
+                                    <h2>ENGLISH AND ENGLISH LITERATURE</h2>
+                                    <p class="education-year">2012 - 2012</p>
+                                    <h3>EC ENGLISH LANGUAGE SCHOOL</h3>
+                                    <p>"Språkutbildning i Storbritanien, Brighton i 6 veckor. Under min vistelse 
+                                        där bodde jag hos en värdfamilj."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="education-underline"></div>
+                        <div class="education">
+                            <div class="education-wrapper">
+                                <div class="education-info">
+                                    <h2>MEDIAPROGRAMMET, NYA MEDIER</h2>
+                                    <p class="education-year">2007 - 2010</p>
+                                    <h3>MUNKEBÄCKGYMNASIET</h3>
+                                    <p>"Gymnasieutbildning, estetisk programmet med inriktning nya medier 
+                                        som innebär grundläggande utbildning i webbutveckling, bild, ljud och 
+                                        film."</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="social">
-                <a class="fa fa-github fa-2x" href="https://github.com/zandranicellaalte"></a>
-                <a class="fa fa-linkedin fa-2x" href="https://www.linkedin.com/in/zandra-alte-2415a1ba/"></a> <br>
-                <a class="email" href="mailto:zandranicellaalte@gmail.com">zandranicellaalte@gmail.com</a>
-            </div>
+                <!-- ------------------------------------------------------------------- -->
+                <div class="experiences">
+                    <div class="scroller">
+                        <div class="experience">
+                            <div class="experience-wrapper">
+                                <div class="experience-info">
+                                    <h2>PARTNERLOGISTIK SVERIGE AB</h2>
+                                    <p class="experience-year">2018 - Nu</p>
+                                    <h3>LAGER OCH ORDERHANTERING</h3>
+                                    <p>"Bland annat orderplockning, sändning, packning och lagerarbete för 
+                                        E-handelsbutiker."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience">
+                            <div class="experience-wrapper">
+                                <div class="experience-info">
+                                    <h2>KÅRHUSET BOULOGNER</h2>
+                                    <p class="experience-year">2013 - Nu</p>
+                                    <h3>KROGPERSONAL</h3>
+                                    <p>"Serverat kunder i barer, plockat upp varor, disk, kökshantering, 
+                                        kassahantering under högt tempo, garderobsvärd, utevakt, hanterat 
+                                        kunder i insläpp, springare genom att plocka disk, fylla på barer, ta hand 
+                                        om tvätt, ta hand om personal, m.m."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience">
+                            <div class="experience-wrapper">
+                                <div class="experience-info">
+                                    <h2>RESTAURANG SEASIDE</h2>
+                                    <p class="experience-year">2019 - 2022</p>
+                                    <h3>SERVITRIS</h3>
+                                    <p>"På Seaside har jag fått servera kunder, stå i baren, 
+                                        kassahantering,kundbemötande, lagerhantering, catering, tagit hand 
+                                        om stora evenemang som t.ex. bröllop, personalfester m.m."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience">
+                            <div class="experience-wrapper">
+                                <div class="experience-info">
+                                    <h2>GÖTEBORGS MARSIPANFABRIK AB</h2>
+                                    <p class="experience-year">2019 - 2022</p>
+                                    <h3>TILLVERKARE</h3>
+                                    <p>"Fick jobba under högt tempo med att packa varor, lagerhantering, 
+                                        trycka marsipan, doppa marsipan i choklad med maskin. m.m."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience">
+                            <div class="experience-wrapper">
+                                <div class="experience-info">
+                                    <h2>LANDALASKOLAN</h2>
+                                    <p class="experience-year">2019 - 2022</p>
+                                    <h3>FERIEARBETARE / FRITISLEDARE</h3>
+                                    <p>"Arbetar med att skapa gemenskap, stödja och coacha barngruppen 
+                                        både på raster och under utbildningstiden, men även på utyckter."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--------------------------- SKILLS ------------------------------->
+            <section id="skills">
+                <div class="section-header">
+                    <hi class="section-heading">Skills</hi>
+                    <div class="underline"></div>
+                </div>
+            </section>
+            <!--------------------------- PROJECT ------------------------------>
+            <section id="projects">
+                <div class="section-header">
+                    <hi class="section-heading">Projekt</hi>
+                    <div class="underline"></div>
+                </div>
+                <div class="project-wrapper">
+                    <div class="project">
+                        <div class="project-img-wrapper">
+                            <img src="silvertorpet_photo.png" alt="#">
+                            <div class="project-info">
+                                <h2>Website</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos dolores deleniti assumenda laborum quisquam vitae, iure consequuntur consectetur quod architecto vero illum suscipit vel eligendi atque iste ipsam similique facilis.</p>
+                                <button><a class="project-link" href="#">Gå till projektet</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-img-wrapper">
+                            <img src="silvertorpet_photo.png" alt="#">
+                            <div class="project-info">
+                                <h2>Website</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos dolores deleniti assumenda laborum quisquam vitae, iure consequuntur consectetur quod architecto vero illum suscipit vel eligendi atque iste ipsam similique facilis.</p>
+                                <button><a class="project-link" href="#">Gå till projektet</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project-img-wrapper">
+                            <img src="silvertorpet_photo.png" alt="#">
+                            <div class="project-info">
+                                <h2>Website</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos dolores deleniti assumenda laborum quisquam vitae, iure consequuntur consectetur quod architecto vero illum suscipit vel eligendi atque iste ipsam similique facilis.</p>
+                                <button><a class="project-link" href="#">Gå till projektet</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--------------------------- CONTACT ------------------------------>
+            <section id="contact">
+                <div class="contact-wrapper">
+                    <div class="contact-left">
+                        <img src="IMG_3427.JPG" alt="">
+                    </div>
+                    <div class="contact-right">
+                        <div class="section-header">
+                            <hi class="section-heading">Kontakt</hi>
+                            <div class="underline"></div>
+                        </div>
+                        <a href="mailto:zandranicellaalte@gmail.com" class="mail">zandranicellaalte@gmail.com</a>
+                        <p class="city">SKÖVDE</p>
+                    </div>
+                </div>
+            </section>
+            <!--------------------------- ------ ------------------------------>
+        
+            <a href="#" class="scroll-btn"><i class="fas fa-arrow-up"></i></a>
+
         </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
