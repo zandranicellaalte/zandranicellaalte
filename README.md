@@ -1,1 +1,4 @@
 
+While ( !goalAchieved() ) {
+  try();
+}
