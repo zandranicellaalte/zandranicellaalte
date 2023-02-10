@@ -1,4 +1,4 @@
 
-While ( !goalAchieved() ) {
+while ( !goalAchieved() ) {
   try();
 }
